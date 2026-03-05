@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────────────────────────
+#  AI Object Narrator — requirements.txt
+#  Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────
+
+# ── Web framework ────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Computer vision ──────────────────────────────────────────────
+opencv-python-headless>=4.9.0.80   # headless = no GUI window needed
+ultralytics>=8.2.0                 # YOLOv8 (downloads yolov8n.pt on first run)
+
+# ── OCR ──────────────────────────────────────────────────────────
+easyocr>=1.7.1
+
+# ── Text-to-Speech ───────────────────────────────────────────────
+gtts>=2.5.1
+
+# ── Numerics / image handling ────────────────────────────────────
+numpy>=1.26.0
+Pillow>=10.3.0
+
+# ── Optional: GPU acceleration for EasyOCR (uncomment if CUDA available) ──
+# torch>=2.2.0+cu118 --index-url https://download.pytorch.org/whl/cu118
